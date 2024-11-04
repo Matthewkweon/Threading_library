@@ -68,5 +68,7 @@ Implementing the `pthread_join` function presented unique challenges in managing
 
 To compile and run this project, use:
 ```bash
-gcc -o threads threads.c -lpthread
-./threads
+make
+./main
+
+- This should print out each thread separately. leaving the main thread to finsih last, but the first 3 threads to finish first.
