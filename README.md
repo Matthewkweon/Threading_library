@@ -71,4 +71,5 @@ To compile and run this project, use:
 make
 ./main
 
-- This should print out each thread separately. leaving the main thread to finsih last, but the first 3 threads to finish first.
+- This should print out each thread separately. leaving the main thread to finsih last, but the first 3 threads to finish first. Depending on what main thread you run, it should do different things. The semaphore testing in main.c ensures that the threads never run at the same time, ensuring that thread 1 finishes before thread 2 + thread 2 finishes before thread 3.
+- However, if you uncomment the pthread_join section in main.c, it should simply allow main to finish last compared to thread 1,2 and 3. 
